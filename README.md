@@ -1,49 +1,58 @@
-# Agentic Ai resume analyzer
-# PROJECT ARCHITECTURE
+# 🤖 Agentic AI Resume Analyzer
+
+An AI-powered Resume Analyzer built using:
+
+- ⚛️ React (Frontend)
+- ☕ Spring Boot (Backend)
+- 🤖 OpenAI / HuggingFace (AI Service)
+
+---
+
+## 🏗️ Project Architecture
 
 React (UI)
-   |
-   |  REST API
-   v
+│
+│ REST API
+▼
 Spring Boot (Java)
-   |
-   |  AI API (OpenAI / HuggingFace)
-   v
+│
+│ AI API (OpenAI / HuggingFace)
+▼
 AI Service
 
--------------------------------------------------
+---
 
-# Frontend Structure
+## 📁 Frontend Structure
 resume-analyzer-frontend/
- ├── src/
- │    ├── App.js
- │    └── index.js
+├── src/
+│ ├── App.js
+│ └── index.js
 
--------------------------------------------------
 
-# Backend Folder Structure
+---
+
+## 📁 Backend Structure
+
 
 resume-analyzer-backend/
- ├── src/main/java/com/example/resumeanalyzer
- │    ├── controller
- │    │    └── ResumeController.java
- │    ├── service
- │    │    └── ResumeAnalysisService.java
- │    ├── dto
- │    │    └── ResumeRequest.java
- │    ├── dto
- │    │    └── ResumeResponse.java
- │    └── ResumeAnalyzerApplication.java
- └── application.properties
+├── src/main/java/com/example/resumeanalyzer
+│ ├── controller
+│ │ └── ResumeController.java
+│ ├── service
+│ │ └── ResumeAnalysisService.java
+│ ├── dto
+│ │ ├── ResumeRequest.java
+│ │ └── ResumeResponse.java
+│ └── ResumeAnalyzerApplication.java
+└── application.properties
 
--------------------------------------------------
 
-# HOW TO RUN
+---
 
-Front-end
+## 🚀 How To Run
+
+### 🔹 Backend
 mvn spring-boot:run
-
-Back-end
+### 🔹 Frontend
 npm install
 npm start
-
